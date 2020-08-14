@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>Tip Calculator</title>
+	<link rel="stylesheet" href="styles.css">
+	
+</head>
+
+<body>
+	
+	<div class="container" style="float:left">
+	<form onsubmit="calculate()">	
+	<h3>Tip Calculator</h3>
+	
+  	<label for="billAmount">How much was your bill? </label>
+  	<input type="text" id="billAmount" name="billAmount" placeholder="Bill Amount ($)"><br><br>
+  	<label for="tipPercent">By what percentage are you tipping?</label>
+  	<input type="text" id="tipPercent" name="tipPercent" placeholder="Tip Percentage (%)"><br><br>
+  	<label for="numPeople">How many people are sharing the bill?</label>
+  	<input type="text" id="numPeople" name="numPeople" placeholder="Number of People"><br><br>  	
+
+
+  	<input type="submit" value="Submit">
+	</form>
+	</div>
+
+  	<script src="main.js"></script>
+
+
+
+
+</body>
+
+</html>

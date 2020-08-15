@@ -6,6 +6,8 @@ var textContainer=document.getElementById("text-container");
 var output;
 
 
+//Need to do error handling
+
 function calculate(){
 	output=(billAmount.value*(tipPercent.value/100))/numPeople.value
 

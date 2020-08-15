@@ -7,8 +7,9 @@ var output;
 
 
 function calculate(){
-	console.log(billAmount.value);
-	textContainer.innerHTML=billAmount.value;
+	output=(billAmount.value*(tipPercent.value/100))/numPeople.value
+
+	textContainer.innerHTML="Tip: $"+output
 	textContainer.classList.remove("hide-me");
 }
 

@@ -10,18 +10,20 @@
 <body>
 	
 	<div class="container" style="float:left">
-	<form onsubmit="calculate()">	
+	<form>	
 	<h3>Tip Calculator</h3>
 	
   	<label for="billAmount">How much was your bill? </label>
-  	<input type="text" id="billAmount" name="billAmount" placeholder="Bill Amount ($)"><br><br>
+  	<input type="number" id="billAmount" name="billAmount" placeholder="Bill Amount ($)"><br><br>
   	<label for="tipPercent">By what percentage are you tipping?</label>
-  	<input type="text" id="tipPercent" name="tipPercent" placeholder="Tip Percentage (%)"><br><br>
+  	<input type="number" id="tipPercent" name="tipPercent" placeholder="Tip Percentage (%)"><br><br>
   	<label for="numPeople">How many people are sharing the bill?</label>
   	<input type="text" id="numPeople" name="numPeople" placeholder="Number of People"><br><br>  	
 
 
-  	<input type="submit" value="Submit">
+  	<input id="submit-button" type="button" value="Submit" >
+  	<h3 id="text-container" class="hide-me">You should tip 0.00 %</h3>
+
 	</form>
 	</div>
 

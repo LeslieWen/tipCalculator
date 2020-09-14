@@ -8,6 +8,8 @@ var output;
 
 //Need to do error handling
 
+//And If percentage gets into negatives
+
 function calculate(){
 	output=(billAmount.value*(tipPercent.value/100))/numPeople.value
 

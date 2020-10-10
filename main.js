@@ -8,13 +8,6 @@ var output;
 
 //Need to do error handling
 
-if(billAmount<=0){
-	alert("You cannot have a bill amount of zero");
-}
-
-
-//And If percentage gets into negatives
-
 function calculate(){
 	output=(billAmount.value*(tipPercent.value/100))/numPeople.value
 
@@ -23,5 +16,13 @@ function calculate(){
 }
 
 document.getElementById("submit-button").onclick = function() {
-  calculate();
+	if(billAmount.value<=0){
+		alert("You cannot have a bill amount of zero");
+	}else if(tipPercent.value<0){
+		alert("You cannot have a negative tip percentage rate")
+	}else{
+		calculate();
+	}
+
+  	
 };

@@ -8,6 +8,11 @@ var output;
 
 //Need to do error handling
 
+if(billAmount<0){
+	alert("You cannot have a bill amount of zero");
+}
+
+
 //And If percentage gets into negatives
 
 function calculate(){

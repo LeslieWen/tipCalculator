@@ -8,7 +8,7 @@ var output;
 
 //Need to do error handling
 
-if(billAmount<0){
+if(billAmount<=0){
 	alert("You cannot have a bill amount of zero");
 }
 

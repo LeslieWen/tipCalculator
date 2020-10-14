@@ -10,6 +10,9 @@ function calculate(){
 	textContainer.classList.remove("hide-me");
 }
 
+document.getElementById
+
+
 document.getElementById("submit-button").onclick = function() {
 	if(billAmount.value<=0){
 		alert("You cannot have a bill amount of zero or less");
@@ -18,6 +21,4 @@ document.getElementById("submit-button").onclick = function() {
 	}else{
 		calculate();
 	}
-
-  	
 };
